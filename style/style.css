@@ -12,6 +12,23 @@ nav h3 {
   margin: 20px 30px;
 }
 
+nav button {
+  border: none;
+  background-color: #C8C1B2;
+  font-size: 2rem;
+  margin: 0 30px;
+}
+
 h3 {
   font-size: 1.5rem;
+}
+
+
+.img01 {
+  width: 100%;
+  height: auto;
+}
+
+.block01 {
+  margin: 20px;
 }
