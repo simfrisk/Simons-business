@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #C8C1B2;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3 {
+  margin: 20px 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
