@@ -43,6 +43,14 @@ h3 {
 
 }
 
+.img02 {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px 0px 0px 0px;
+
+}
+
 
 .text01Overlay {
   position: absolute;
@@ -109,13 +117,14 @@ h3 {
 .section3 {
   text-align: center;
   background-color: #C1B2C8;
-  margin: 70px 0px 20px 0px;
+  margin: 70px 0px 0px 0px;
   padding: 25px;
+  padding-bottom: 50px;
 }
 
 .section4 {
   text-align: center;
-  padding: 25px;
+  padding: 25px 0px 10px 0px;
 }
 
 .section5 {
