@@ -54,9 +54,25 @@ nav button {
   gap: 10px;
 }
 
+.memberContainer p {
+  font-size: .8rem;
+  font-weight: bolder;
+}
 
+.memberContainer button {
+  font-size: 1rem;
+  padding: 4px 12px;
+  background-color: #C1B2C8;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  transition: ease .5s;
+}
 
-.meberContainer button {}
+.memberContainer button:hover {
+  background-color: #dccce4;
+  transform: scale(102%);
+}
 
 
 
