@@ -24,8 +24,6 @@ nav button {
   margin: 0 30px;
 }
 
-.section1 {}
-
 
 .img01Container {
   display: grid;
@@ -45,7 +43,7 @@ nav button {
   color: white;
   grid-column: 1 / 5;
   grid-row: 1 / 5;
-  font-size: .7rem;
+  /* font-size: .7rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +94,17 @@ nav button {
 
 }
 
+.preAbout {
+  text-align: center;
+  margin: 40px 10px 30px 10px;
+  padding: 0px 10px;
+}
 
+.preAbout h3 {
+
+  margin: 0 0 15px 0;
+
+}
 
 .aboutUs {
   display: grid;
@@ -181,4 +189,22 @@ nav button {
   background-color: #050505;
   margin: px 0px;
   padding: 25px;
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 2000px) {
+
+
+  img {
+    max-height: 600px;
+    object-fit: cover;
+
+  }
+
+  .aboutUs {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
 }
