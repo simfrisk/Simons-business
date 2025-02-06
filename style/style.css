@@ -208,7 +208,7 @@ nav button {
   display: none;
 }
 
-/* @media (max-width: 389px) {
+@media (max-width: 389px) {
 
   h3 {
     font-size: .8rem;
@@ -234,7 +234,7 @@ nav button {
     grid-template-columns: repeat(1, 1fr);
 
   }
-} */
+}
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
