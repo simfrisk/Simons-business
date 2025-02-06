@@ -8,13 +8,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav h3 {
   margin: 20px 30px;
+}
+
+.navP {
+  display: none;
 }
 
 nav button {
@@ -34,8 +40,6 @@ nav button {
   grid-column: 1 / 5;
   grid-row: 1 / 5;
   width: 100%;
-
-
 }
 
 .text01Overlay {
@@ -49,7 +53,18 @@ nav button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 30px;
   gap: 10px;
+}
+
+.climbContainer h3 {
+  margin: 10px;
+
+}
+
+.climbContainer p {
+  margin: 10px;
+
 }
 
 .memberContainer p {
@@ -186,13 +201,131 @@ nav button {
   color: white;
   background-color: #050505;
   padding: 25px;
+
+}
+
+.map {
+  display: none;
+}
+
+@media (max-width: 389px) {
+
+  h3 {
+    font-size: .8rem;
+  }
+
+  p {
+    font-size: .6rem;
+
+  }
+
+  .climbContainer h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .climbContainer p {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .aboutUs {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+
+  }
+
+
+
+  .memberContainer p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .memberContainer button {
+    font-size: 1.5rem;
+    padding: 10px 22px;
+
+  }
+
+  .climbContainer p {
+    margin: 50px;
+  }
+
+
+
+  .preAbout {
+    margin: 60px 0px;
+  }
+
+  .bold {
+    font-size: 1.8rem;
+    margin: 0 0 400px 0;
+  }
+
+  .skinny {
+    font-size: 1.4rem;
+  }
 }
 
 
 
 
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 1024px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  .navRight {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .navP {
+    display: block;
+    font-size: 1.6rem;
+    margin: 0;
+    transition: ease .3s;
+  }
+
+  .navP:hover {
+    color: rgb(92, 92, 92);
+    transform: scale(105%);
+  }
+
+  .logIn {
+    background-color: #f8f5ef;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
 
 
   .img01 {
@@ -302,10 +435,39 @@ nav button {
 
   }
 
+  .location {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
 
+  .locationText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
+  .ourLocation {
+    font-weight: bolder;
+    font-size: 2.1rem;
+  }
 
+  .locationText p {
+    line-height: 45px;
+    margin: 15px;
+  }
 
+  .adress {
+    color: #c9c9c9;
+    font-size: 1.7rem;
+  }
+
+  .map {
+    display: block;
+    margin: 50px;
+  }
 
 
 
