@@ -164,6 +164,15 @@ nav button {
   color: white;
   width: 80%;
 
+
+}
+
+.pBox h3 {
+  display: none;
+  color: white;
+  width: 80%;
+  line-height: 40px;
+  margin: 20px 0 10px 0;
 }
 
 
@@ -234,6 +243,12 @@ nav button {
     grid-template-columns: repeat(1, 1fr);
 
   }
+
+  .pBox p {
+    font-size: 1.2rem;
+  }
+
+
 }
 
 @media (min-width: 667px) and (max-width: 1024px) {
@@ -340,6 +355,20 @@ nav button {
   }
 
 
+  .pBox h3 {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    width: 80%;
+    line-height: 40px;
+    margin: 20px 0 10px 0;
+  }
+
+  .pBox p {
+    font-size: 1.8rem;
+  }
+
+
 
   h3 {
     font-size: 2.2rem;
@@ -391,8 +420,12 @@ nav button {
     padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
 
   }
+
+
 
   .pricesH3 {
     grid-column: span 3;
