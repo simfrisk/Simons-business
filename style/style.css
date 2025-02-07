@@ -262,7 +262,9 @@ nav button {
 
   }
 
-
+  nav h3 {
+    font-size: 1.6rem;
+  }
 
   .memberContainer p {
     font-size: 1.2rem;
