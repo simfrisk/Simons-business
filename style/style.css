@@ -297,8 +297,6 @@ nav button {
 
 
 
-
-
 @media (min-width: 1024px) {
 
   nav {
@@ -377,6 +375,10 @@ nav button {
   p {
     font-size: 1.5rem;
 
+  }
+
+  .climbContainer h3 {
+    margin: 0 0 20px 0;
   }
 
   .memberContainer p {
