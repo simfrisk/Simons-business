@@ -31,8 +31,6 @@ nav button {
 }
 
 .img-01 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   width: 100%;
   filter: brightness(65%);
 
