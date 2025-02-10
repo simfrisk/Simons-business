@@ -1,8 +1,13 @@
+h3 {
+  font-size: 1.2rem;
+}
+
 body {
   margin: 0;
   background-color: #E6DDCA;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 nav {
   display: flex;
@@ -10,12 +15,11 @@ nav {
   align-items: center;
 }
 
-.site-title {
-  font-size: 1.2rem;
+nav h3 {
   margin: 20px 30px;
 }
 
-.nav-links {
+.navP {
   display: none;
 }
 
@@ -27,22 +31,23 @@ nav button {
 }
 
 
-.main-img-container {
+.img01Container {
   display: grid;
+
 }
 
-.img-01 {
+.img01 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   width: 100%;
-
 }
 
-.main-text-overlay {
+.text01Overlay {
   background-color: rgba(0, 0, 0, 0.167);
   color: white;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  /* font-size: .7rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,25 +57,22 @@ nav button {
   gap: 10px;
 }
 
-
-
-.climb-container h2 {
-  margin: 10px;
-  font-size: 2.2rem;
-
-}
-
-.climb-container p {
+.climbContainer h3 {
   margin: 10px;
 
 }
 
-.member-container p {
+.climbContainer p {
+  margin: 10px;
+
+}
+
+.memberContainer p {
   font-size: .8rem;
   font-weight: bolder;
 }
 
-.member-container button {
+.memberContainer button {
   font-size: 1rem;
   padding: 4px 12px;
   background-color: #C1B2C8;
@@ -80,7 +82,7 @@ nav button {
   transition: ease .5s;
 }
 
-.member-container button:hover {
+.memberContainer button:hover {
   background-color: #dccce4;
   transform: scale(102%);
 }
@@ -102,17 +104,17 @@ nav button {
 
 }
 
-.pre-about {
+.preAbout {
   text-align: center;
   margin: 40px 10px 30px 10px;
   padding: 0px 10px;
 }
 
-.pre-about h2 {
+.preAbout h3 {
   margin: 0 0 15px 0;
 }
 
-.about-us {
+.aboutUs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: center;
@@ -120,7 +122,7 @@ nav button {
   margin: 20px;
 }
 
-.about-container {
+.boxContainer {
   border-radius: 5px;
   padding: 18px;
   display: grid;
@@ -132,7 +134,7 @@ nav button {
 
 }
 
-.img-box {
+.imgBox {
 
   object-fit: cover;
   height: 100%;
@@ -143,7 +145,7 @@ nav button {
 
 }
 
-.about-text {
+.pBox {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   display: flex;
@@ -154,23 +156,19 @@ nav button {
   border-radius: 10px;
 }
 
-.about-text p {
+.pBox p {
   color: white;
   width: 80%;
 
 
 }
 
-.about-text h3 {
+.pBox h3 {
   display: none;
   color: white;
   width: 80%;
   line-height: 40px;
   margin: 20px 0 10px 0;
-}
-
-h3 {
-  font-size: 1.6rem;
 }
 
 
@@ -183,7 +181,7 @@ h3 {
   padding-bottom: 50px;
 }
 
-.multi-img {
+.img02 {
   width: 100%;
   height: auto;
   display: block;
@@ -217,7 +215,7 @@ h3 {
 
 @media (min-width: 0px) and (max-width: 400px) {
 
-  .site-title {
+  h3 {
     font-size: .8rem;
   }
 
@@ -226,25 +224,23 @@ h3 {
 
   }
 
-  h3 {
-    font-size: 22;
-    font-size: 1rem;
+  .climbContainer h3 {
     margin: 0;
     padding: 0;
   }
 
-  .climb-container p {
+  .climbContainer p {
     margin: 0;
     padding: 0;
   }
 
 
-  .about-us {
+  .aboutUs {
     grid-template-columns: repeat(1, 1fr);
 
   }
 
-  .about-text p {
+  .pBox p {
     font-size: 1.2rem;
   }
 
@@ -253,7 +249,7 @@ h3 {
 
 @media (min-width: 667px) and (max-width: 1024px) {
 
-  .site-title {
+  h3 {
     font-size: 2.2rem;
   }
 
@@ -266,24 +262,24 @@ h3 {
     font-size: 1.6rem;
   }
 
-  .member-container p {
+  .memberContainer p {
     font-size: 1.2rem;
     font-weight: bolder;
   }
 
-  .member-container button {
+  .memberContainer button {
     font-size: 1.5rem;
     padding: 10px 22px;
 
   }
 
-  .climb-container p {
+  .climbContainer p {
     margin: 50px;
   }
 
 
 
-  .pre-about {
+  .preAbout {
     margin: 60px 0px;
   }
 
@@ -307,29 +303,25 @@ h3 {
     padding: 10px 30px;
   }
 
-  .site-title {
-    font-size: 2.2rem;
-  }
-
-  .nav-right {
+  .navRight {
     display: flex;
     align-items: center;
     gap: 80px;
   }
 
-  .nav-links {
+  .navP {
     display: block;
     font-size: 1.6rem;
     margin: 0;
     transition: ease .3s;
   }
 
-  .nav-links:hover {
+  .navP:hover {
     color: rgb(92, 92, 92);
     transform: scale(105%);
   }
 
-  .nav-login {
+  .logIn {
     background-color: #f8f5ef;
     height: 50px;
     padding: 10px 20px;
@@ -352,13 +344,13 @@ h3 {
 
   }
 
-  .about-us {
+  .aboutUs {
     grid-template-columns: repeat(4, 1fr);
 
   }
 
 
-  .about-text h3 {
+  .pBox h3 {
     display: block;
     font-size: 1.8rem;
     color: white;
@@ -367,8 +359,14 @@ h3 {
     margin: 20px 0 10px 0;
   }
 
-  .about-text p {
+  .pBox p {
     font-size: 1.8rem;
+  }
+
+
+
+  h3 {
+    font-size: 2.2rem;
   }
 
   p {
@@ -376,21 +374,17 @@ h3 {
 
   }
 
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  .climb-container h2 {
+  .climbContainer h3 {
     margin: 0 0 20px 0;
   }
 
-  .member-container p {
+  .memberContainer p {
     font-size: 1.5rem;
     font-weight: bolder;
   }
 
 
-  .member-container button {
+  .memberContainer button {
     font-size: 2rem;
     padding: 10px 22px;
     background-color: #C1B2C8;
@@ -400,7 +394,7 @@ h3 {
     transition: ease .5s;
   }
 
-  .pre-about {
+  .preAbout {
     margin: 70px 0px;
   }
 
@@ -413,7 +407,7 @@ h3 {
     font-size: 1.6rem;
   }
 
-  .about-container:Hover {
+  .boxContainer:Hover {
     transform: scale(102%);
   }
 
@@ -430,42 +424,42 @@ h3 {
 
   }
 
-  .prices-title {
+  .pricesH3 {
     grid-column: span 3;
 
   }
 
-  .prices-text-1 {
+  .pricesText1 {
     display: flex;
     flex-direction: column;
     justify-content: left;
   }
 
-  .prices-text-2 {
+  .pricesText2 {
     display: flex;
     flex-direction: column;
 
   }
 
-  .prices-text-1 p {
+  .pricesText1 p {
 
     margin: 10px 30px;
     text-align: right;
   }
 
-  .prices-text-2 p {
+  .pricesText2 p {
 
     margin: 10px 30px;
     text-align: center;
   }
 
-  .prices-text-3 p {
+  .pricesText3 p {
 
     margin: 10px 30px;
     text-align: left;
   }
 
-  .multi-img {
+  .img02 {
     max-height: 600px;
     object-fit: cover;
 
