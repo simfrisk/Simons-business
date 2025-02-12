@@ -51,6 +51,7 @@ main {
 .page-title {
   text-align: center;
   font-size: 3rem;
+  margin-top: 80px;
 }
 
 .items {
@@ -63,20 +64,19 @@ main {
 }
 
 /* Image highlighted by scale and color */
-.items:hover .image-container {
+.image-container:hover {
   transform: scale(1.02);
   background-color: rgb(195, 195, 195);
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 /* Image highlighted by scale */
-.items:hover img {
+.image-container:hover img {
   transform: scale(1.02);
   transition: transform 0.3s ease-in-out
 }
 
 .image-container {
-
   height: 400px;
   width: 300px;
   background-color: rgb(187, 187, 187);
@@ -107,8 +107,26 @@ img {
 
 .item-btn {
   border-radius: 20px;
+  font-size: 1rem;
+  height: 40px;
+  border: none;
+  background-color: #C1B2C8;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.);
+  transition: ease .3s;
 }
 
+.item-btn:hover {
+  box-shadow: none;
+  transform: scale(1.05);
+}
+
+.item-title {
+  margin: 25px 0 0 0;
+}
+
+.item-description {
+  margin: 15px 0 25px 0;
+}
 
 /*
 inpo
