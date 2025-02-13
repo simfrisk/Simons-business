@@ -39,17 +39,16 @@ nav button {
   margin: 0 30px;
 }
 
-.main-img-container {
+.hero-container {
   position: relative;
 }
 
-.img-01 {
+.hero-img {
   width: 100%;
   filter: brightness(65%);
-
 }
 
-.main-text-overlay {
+.hero-text {
   color: white;
   position: absolute;
   top: 50%;
@@ -61,15 +60,13 @@ nav button {
   border-radius: 10px;
 }
 
-.climb-container h2 {
+.hero-description-text h2 {
   margin: 10px;
   font-size: 1.5rem;
-
 }
 
-.climb-container p {
+.hero-description-text p {
   margin: 10px;
-
 }
 
 .member-container p {
@@ -182,7 +179,7 @@ h3 {
   padding-bottom: 50px;
 }
 
-.multi-img {
+.section-imgs {
   width: 100%;
   height: auto;
   display: block;
@@ -220,7 +217,6 @@ h3 {
 
   p {
     font-size: .6rem;
-
   }
 
   h3 {
@@ -254,7 +250,6 @@ h3 {
 
   p {
     font-size: 1.5rem;
-
   }
 
   nav h3 {
@@ -269,7 +264,6 @@ h3 {
   .member-container button {
     font-size: 1.5rem;
     padding: 10px 22px;
-
   }
 
   .climb-container p {
@@ -290,7 +284,7 @@ h3 {
   }
 }
 
-
+/* desktop viewport */
 @media (min-width: 1024px) {
 
   nav {
@@ -338,14 +332,13 @@ h3 {
     display: none;
   }
 
-  .img-01 {
+  .hero-img {
     max-height: 600px;
     object-fit: cover;
   }
 
   .about-us {
     grid-template-columns: repeat(4, 1fr);
-
   }
 
   .about-text h3 {
@@ -363,7 +356,6 @@ h3 {
 
   p {
     font-size: 1.5rem;
-
   }
 
   h3 {
@@ -436,27 +428,23 @@ h3 {
   }
 
   .prices-text-1 p {
-
     margin: 10px 30px;
     text-align: right;
   }
 
   .prices-text-2 p {
-
     margin: 10px 30px;
     text-align: center;
   }
 
   .prices-text-3 p {
-
     margin: 10px 30px;
     text-align: left;
   }
 
-  .multi-img {
+  .section-imgs {
     max-height: 600px;
     object-fit: cover;
-
   }
 
   .location {

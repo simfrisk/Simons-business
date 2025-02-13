@@ -59,10 +59,9 @@ item08Btn.onclick = function () {
 
 item09Btn.onclick = function () {
   popUpProduct.style.display = "block";
-  popUpTitle.textContent = "La Sportiva Miura";
+  popUpTitle.textContent = "La Sportiva Tarantula";
 };
 
 exitBtn.onclick = function () {
   popUpProduct.style.display = "none";
-  popUpTitle.textContent = "La Sportiva Tarantula";
 };

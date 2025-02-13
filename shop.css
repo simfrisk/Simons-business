@@ -86,7 +86,6 @@ main {
   align-items: center;
   padding: 0 20px;
   overflow: hidden;
-
 }
 
 .image-container img {
@@ -129,7 +128,7 @@ main {
 
 .pop-up-product {
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -137,11 +136,16 @@ main {
   padding: 30px 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  height: 100%;
   text-align: center;
   display: none;
-  border: solid #d0d0d0 2px;
+
+}
+
+.exit-container {
+  display: flex;
+  justify-content: right;
 }
 
 
@@ -161,16 +165,17 @@ main {
 }
 
 .pop-up-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .pop-up-price {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .pop-up-price h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-right: 10px;
 }
 
@@ -179,7 +184,7 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   font-size: 1.5rem;
-  padding: 50px;
+  padding: 15px 0 40px 0;
   border: none;
   /* border: solid blue 2px; */
 }
@@ -199,6 +204,7 @@ input {
   text-align: center;
   margin: 0 0 0 3px;
   width: 100px;
+
 }
 
 .add-to-cart-btn {
@@ -216,8 +222,21 @@ input {
   background-color: rgb(237, 237, 237);
 }
 
+@media (max-width: 320px) {
 
+  label {
+    padding: 3px;
+  }
 
+  .pop-up-product {
+    width: 300px;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+}
 
 
 /* ipad viewport */
@@ -286,8 +305,6 @@ input {
     height: 400px;
     width: 290px;
     display: flex;
-    /* border: solid green 3px; */
-    display: flex;
   }
 
   .image-container img {
@@ -295,7 +312,29 @@ input {
     height: auto;
     justify-content: center;
     object-fit: contain;
+  }
 
+  .pop-up-product {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px;
+    width: 400px;
+    height: 600px;
+  }
+
+  .pop-up-title {
+    font-size: 2rem;
+  }
+
+  .pop-up-price {
+    display: flex;
+    align-items: center;
+  }
+
+  .pop-up-price h3 {
+    font-size: 1.5rem;
+    margin-right: 10px;
   }
 
 }
@@ -377,7 +416,29 @@ input {
     height: auto;
     justify-content: center;
     object-fit: contain;
+  }
 
+  .pop-up-product {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px;
+    width: 400px;
+    height: 600px;
+  }
+
+  .pop-up-title {
+    font-size: 2rem;
+  }
+
+  .pop-up-price {
+    display: flex;
+    align-items: center;
+  }
+
+  .pop-up-price h3 {
+    font-size: 1.5rem;
+    margin-right: 10px;
   }
 
 }

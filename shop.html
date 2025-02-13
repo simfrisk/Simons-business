@@ -14,8 +14,8 @@
   <nav>
     <a href="index.html" class="site-title">Boulder Zone</a>
     <div class="nav-right">
-      <button class="nav-links nav-link-1">Events</button>
-      <button class="nav-links nav-link-2">Shop</button>
+      <button class="nav-links nav-events">Events</button>
+      <button class="nav-links nav-shop">Shop</button>
       <button class="nav-links nav-login">LOG IN</button>
       <button class="hamburger">&#9776;</button> <!-- This is only for phone view -->
     </div>
@@ -24,7 +24,9 @@
   <h1 class="page-title">Shop</h1>
 
   <aside id="popUpProduct" class="pop-up-product">
-    <button id="exitBtn" class="exit-btn">X</button>
+    <div class="exit-container">
+      <button id="exitBtn" class="exit-btn">X</button>
+    </div>
     <h2 id="popUpTitle" class="pop-up-title">Item text</h2>
     <div class="pop-up-price">
       <h3>Price:</h3>
@@ -33,7 +35,7 @@
     <form action="http://httpbin.org/anything" method="post">
       <fieldset>
         <label>
-          <span>Size</span>
+          <span>Size:</span>
           <select name="size">
             <option value="small">Small</option>
             <option value="medium">Medium</option>
@@ -42,7 +44,7 @@
           </select>
         </label>
         <label>
-          <span>color</span>
+          <span>color:</span>
           <select name="color">
             <option value="green">Green</option>
             <option value="red">Red</option>
@@ -51,7 +53,7 @@
           </select>
         </label>
         <label>
-          <span>Quantity</span>
+          <span>Quantity:</span>
           <input type="number" name="quantity" value="1">
         </label>
       </fieldset>
