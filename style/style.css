@@ -209,6 +209,25 @@ h3 {
   display: none;
 }
 
+.temp-div {
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 50px 0;
+
+}
+
+.temp-link {
+  text-decoration: none;
+  color: white;
+  background-color: #050505;
+  font-size: 1rem;
+}
+
+.temp-link:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 0px) and (max-width: 400px) {
 
   .site-title {
