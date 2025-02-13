@@ -23,7 +23,45 @@
 
   <h1 class="page-title">Shop</h1>
 
+  <aside id="popUpProduct" class="pop-up-product">
+    <button id="exitBtn" class="exit-btn">X</button>
+    <h2 id="popUpTitle" class="pop-up-title">Item text</h2>
+    <div class="pop-up-price">
+      <h3>Price:</h3>
+      <p>250 kr</p>
+    </div>
+    <form action="http://httpbin.org/anything" method="post">
+      <fieldset>
+        <label>
+          <span>Size</span>
+          <select name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="XL">XL</option>
+          </select>
+        </label>
+        <label>
+          <span>color</span>
+          <select name="color">
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="orage">Orange</option>
+            <option value="blue">Blue</option>
+          </select>
+        </label>
+        <label>
+          <span>Quantity</span>
+          <input type="number" name="quantity" value="1">
+        </label>
+      </fieldset>
+      <button class="add-to-cart-btn" type="submit">Add to cart</button>
+    </form>
+  </aside>
+
   <main>
+
+
 
 
 
@@ -31,11 +69,13 @@
       <div class="image-container">
         <img src="img/shirt-02.png" alt="">
       </div>
+
       <div class="item-text">
         <h3 class="item-title">Fulu Climbing</h3>
         <p class="item-description">This is a great shirt for climbing</p>
         <button id="item01Btn" class="item-btn">Add to basket</button>
       </div>
+
     </article>
 
     <article class="items shirt">
@@ -43,9 +83,9 @@
         <img src="img/shirt-03.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">T-Shirt</h3>
+        <h3 class="item-title">Rock Climbing</h3>
         <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <button id="item02Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -54,9 +94,9 @@
         <img src="img/shirt-01.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">T-Shirt</h3>
+        <h3 class="item-title">La Sportiva Tracer</h3>
         <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <button id="item03Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -65,9 +105,9 @@
         <img src="img/pants1.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">T-Shirt</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <h3 class="item-title">Ripstop Voyger</h3>
+        <p class="item-description">These are great pants for climbing</p>
+        <button id="item04Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -76,9 +116,9 @@
         <img src="img/pants2.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">T-Shirt</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <h3 class="item-title">Hiking Patrol</h3>
+        <p class="item-description">These are great pants for climbing</p>
+        <button id="item05Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -88,8 +128,8 @@
       </div>
       <div class="item-text">
         <h3 class="item-title">Peachell Technical</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <p class="item-description">These are great pants for climbing</p>
+        <button id="item06Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -98,9 +138,9 @@
         <img src="img/shoe2.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">La Sportiva - Miura VS</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <h3 class="item-title">La Sportiva - Miura</h3>
+        <p class="item-description">These are great shoes for climbing</p>
+        <button id="item07Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -109,9 +149,9 @@
         <img src="img/shoe3.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">T-Shirt</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <h3 class="item-title">La Sportiva Miura </h3>
+        <p class="item-description">These are great shoes for climbing</p>
+        <button id="item08Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 
@@ -120,9 +160,9 @@
         <img src="img/shoe4.png" alt="">
       </div>
       <div class="item-text">
-        <h3 class="item-title">La Sportiva Tarantula Olive/Neon</h3>
-        <p class="item-description">This is a great shirt for climbing</p>
-        <button class="item-btn">Add to basket</button>
+        <h3 class="item-title">La Sportiva Tarantula</h3>
+        <p class="item-description">These are great shoes for climbing</p>
+        <button id="item09Btn" class="item-btn">Add to basket</button>
       </div>
     </article>
 

@@ -127,6 +127,99 @@ main {
   margin: 15px 0 25px 0;
 }
 
+.pop-up-product {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: white;
+  padding: 30px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  display: none;
+  border: solid #d0d0d0 2px;
+}
+
+
+.exit-btn {
+  font-size: 1.3rem;
+  border: none;
+  transition: ease .3s;
+  appearance: none;
+  padding: 6px 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.exit-btn:hover {
+  transform: scale(1.2);
+  background-color: rgb(237, 237, 237);
+}
+
+.pop-up-title {
+  font-size: 2rem;
+}
+
+.pop-up-price {
+  display: flex;
+  align-items: center;
+}
+
+.pop-up-price h3 {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 50px;
+  border: none;
+  /* border: solid blue 2px; */
+}
+
+label {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  /* border: solid green 2px; */
+}
+
+select,
+input {
+  font-size: 1.2rem;
+  color: #232323;
+  padding: 3px 5px;
+  text-align: center;
+  margin: 0 0 0 3px;
+  width: 100px;
+}
+
+.add-to-cart-btn {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  transition: ease .3s;
+  appearance: none;
+  padding: 15px 25px;
+  background-color: #C1B2C8;
+}
+
+.add-to-cart-btn:hover {
+  transform: scale(1.2);
+  background-color: rgb(237, 237, 237);
+}
+
+
+
+
+
 /* ipad viewport */
 @media (min-width: 667px) and (max-width: 1023px) {
   nav {
