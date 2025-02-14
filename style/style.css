@@ -32,6 +32,26 @@ nav {
   display: none;
 }
 
+.nav-burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: auto;
+  display: none;
+}
+
+.nav-burger-row {
+  /* border: solid red 2px; */
+  margin: 30px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
 nav button {
   border: none;
   background-color: #E6DDCA;
