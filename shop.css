@@ -113,6 +113,11 @@ main {
   transition: ease .3s;
 }
 
+.temp1 {
+  max-width: 100%;
+  padding: 0 20px;
+}
+
 .item-btn:hover {
   box-shadow: none;
   transform: scale(1.05);
@@ -140,6 +145,7 @@ main {
   height: 100%;
   text-align: center;
   display: none;
+  */
 
 }
 
@@ -179,6 +185,10 @@ main {
   margin-right: 10px;
 }
 
+form {
+  /* border: solid rgb(255, 0, 102) 2px; */
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -192,20 +202,37 @@ fieldset {
 label {
   padding: 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* border: solid green 2px; */
 }
 
 select,
 input {
+  display: flex;
   font-size: 1.2rem;
   color: #232323;
   padding: 3px 5px;
-  text-align: center;
+  text-align: lef;
   margin: 0 0 0 3px;
   width: 100px;
-
+  /* border: solid rgb(255, 0, 0) 2px; */
 }
+
+.span-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* border: solid rgb(3, 251, 65) 4px; */
+  margin: 0 20px;
+}
+
+.select-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  /* border: solid rgb(3, 251, 65) 4px; */
+}
+
 
 .add-to-cart-btn {
   font-size: 1.3rem;

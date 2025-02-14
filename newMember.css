@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: #D9D9D9;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 nav {
@@ -176,6 +177,7 @@ p {
 
   main {
     display: flex;
+
   }
 
   .side-img {
