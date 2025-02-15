@@ -12,6 +12,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #E6DDCA;
 }
 
 .site-title {
@@ -38,17 +42,30 @@ nav {
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
-  width: auto;
-  display: none;
+  width: 100vw;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-burger-menu.open {
+  transform: translateY(0%);
 }
 
 .nav-burger-row {
   /* border: solid red 2px; */
-  margin: 30px 0;
+  margin: 5px 0;
   width: 90%;
   display: flex;
   justify-content: space-between;
+}
 
+.nav-burger-row:hover,
+.nav-burger-row:hover button {
+  background-color: #f5ecd8;
+}
+
+.nav-burger-arrow {
+  font-size: 1.5rem;
 }
 
 
