@@ -6,6 +6,8 @@ body {
   margin: 0;
   background-color: #E6DDCA;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+  /* Adjust to match the nav height */
 }
 
 nav {
@@ -16,7 +18,12 @@ nav {
   width: 100%;
   z-index: 2;
   background-color: #E6DDCA;
+  height: 60px;
+  /* Set a fixed height */
+  top: 0;
+  /* Ensures it stays at the top */
 }
+
 
 .site-title {
   color: black;
