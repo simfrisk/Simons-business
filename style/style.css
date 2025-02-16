@@ -1,3 +1,6 @@
+/* ----- Phone viewport --- Manual Fold -----  */
+
+/* ----- Basics --- Manual Fold -----  */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +13,18 @@ body {
   /* Adjust to match the nav height */
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
+.section-imgs {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px 0px 0px 0px;
+}
+
+/* ----- Nav --- Manual Fold -----  */
 nav {
   display: flex;
   justify-content: space-between;
@@ -60,29 +75,35 @@ nav {
 
 .nav-burger-row {
   /* border: solid red 2px; */
-  margin: 5px 0;
-  width: 90%;
+  margin: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  /* border-bottom: solid black 1px; */
+  transition: background-color 0.1s ease-in-out;
 }
 
 .nav-burger-row:hover,
 .nav-burger-row:hover button {
   background-color: #f5ecd8;
+
 }
 
 .nav-burger-arrow {
   font-size: 1.5rem;
+  margin: 25px 50px;
 }
 
 
 nav button {
   border: none;
   background-color: #E6DDCA;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0 30px;
+  transition: background-color 0.1s ease-in-out;
 }
 
+/* ----- Hero --- Manual Fold -----   */
 .hero-container {
   position: relative;
 }
@@ -128,6 +149,7 @@ nav button {
   transition: ease .5s;
 }
 
+/* ----- About --- Manual Fold -----  */
 .member-container button:hover {
   background-color: #dccce4;
   transform: scale(102%);
@@ -211,9 +233,7 @@ nav button {
   margin: 20px 0 10px 0;
 }
 
-h3 {
-  font-size: 1.6rem;
-}
+/* ----- Prices --- Manual Fold -----  */
 
 .prices {
   text-align: center;
@@ -223,18 +243,13 @@ h3 {
   padding-bottom: 50px;
 }
 
-.section-imgs {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0px 0px 0px 0px;
-}
-
+/* ----- Opten times --- Manual Fold -----  */
 .hours {
   text-align: center;
   padding: 25px 0px 10px 0px;
 }
 
+/* ----- Contact --- Manual Fold -----  */
 .contact {
   text-align: center;
   background-color: #B2B9C8;
@@ -242,6 +257,7 @@ h3 {
   padding: 25px;
 }
 
+/* ----- Location --- Manual Fold -----  */
 .location {
   text-align: center;
   color: white;
@@ -253,14 +269,15 @@ h3 {
   display: none;
 }
 
+/* ----- About Manual Fold -----  */
 .temp-div {
   background-color: #050505;
   display: flex;
   justify-content: center;
   padding: 0 0 50px 0;
-
 }
 
+/* ----- Temp --- Manual Fold -----  */
 .temp-link {
   text-decoration: none;
   color: white;
@@ -272,8 +289,11 @@ h3 {
   transform: scale(1.1);
 }
 
+
+/* Mini phone viewport */
 @media (min-width: 0px) and (max-width: 400px) {
 
+  /* ----- Basics --- Manual Fold -----  */
   .site-title {
     font-size: 1rem;
   }
@@ -289,11 +309,13 @@ h3 {
     padding: 0;
   }
 
+  /* ----- Hero --- Manual Fold -----  */
   .climb-container p {
     margin: 0;
     padding: 0;
   }
 
+  /* ----- About --- Manual Fold -----  */
   .about-us {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -305,18 +327,26 @@ h3 {
 
 }
 
+/* iPad viewport */
 @media (min-width: 667px) and (max-width: 1024px) {
 
-  .site-title {
-    font-size: 2rem;
-  }
-
+  /* ----- Basics --- Manual Fold -----  */
   p {
     font-size: 1.5rem;
   }
 
+  /* ----- Nav --- Manual Fold -----  */
   nav h3 {
     font-size: 1.6rem;
+  }
+
+  /* ----- Hero --- Manual Fold -----  */
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .climb-container p {
+    margin: 50px;
   }
 
   .member-container p {
@@ -329,10 +359,7 @@ h3 {
     padding: 10px 22px;
   }
 
-  .climb-container p {
-    margin: 50px;
-  }
-
+  /* ----- About --- Manual Fold -----  */
   .pre-about {
     margin: 60px 0px;
   }
@@ -350,15 +377,55 @@ h3 {
 /* desktop viewport */
 @media (min-width: 1024px) {
 
+  /* ----- Basic --- Manual Fold -----  */
+  p {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .section-imgs {
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  /* ----- Hero --- Manual Fold -----  */
+  .site-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-img {
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .climb-container h2 {
+    margin: 0 0 20px 0;
+  }
+
+  .member-container p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .member-container button {
+    font-size: 2rem;
+    padding: 10px 22px;
+    background-color: #C1B2C8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: ease .5s;
+  }
+
+  /* ----- Nav --- Manual Fold -----  */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-  }
-
-  .site-title {
-    font-size: 2.2rem;
   }
 
   .nav-right {
@@ -395,11 +462,7 @@ h3 {
     display: none;
   }
 
-  .hero-img {
-    max-height: 600px;
-    object-fit: cover;
-  }
-
+  /* ----- About --- Manual Fold -----  */
   .about-us {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -415,33 +478,6 @@ h3 {
 
   .about-text p {
     font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-  }
-
-  .climb-container h2 {
-    margin: 0 0 20px 0;
-  }
-
-  .member-container p {
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-
-  .member-container button {
-    font-size: 2rem;
-    padding: 10px 22px;
-    background-color: #C1B2C8;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    transition: ease .5s;
   }
 
   .pre-about {
@@ -461,6 +497,7 @@ h3 {
     transform: scale(102%);
   }
 
+  /* ----- Prices --- Manual Fold -----  */
   .prices {
     text-align: center;
     background-color: #C1B2C8;
@@ -505,11 +542,7 @@ h3 {
     text-align: left;
   }
 
-  .section-imgs {
-    max-height: 600px;
-    object-fit: cover;
-  }
-
+  /* ----- Location --- Manual Fold -----  */
   .location {
     padding: 80px 0;
     display: flex;
