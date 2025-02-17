@@ -29,6 +29,7 @@
   --primary-font-color-hover: rgb(202, 202, 202);
   --secondary-font-color: black;
   --dark-color: rgb(40, 40, 40);
+  background-color: var(--primary-color);
 }
 
 body {
