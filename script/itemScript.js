@@ -66,7 +66,6 @@ exitBtn.onclick = function () {
   popUpProduct.style.display = "none";
 };
 
-
 const shopBtn = document.getElementById("shopBtn");
 const burgerBtn = document.getElementById("burger-button");
 const burgerMenu = document.getElementById("burger-menu");

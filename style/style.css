@@ -121,6 +121,29 @@ nav button {
   margin: 25px 50px;
 }
 
+
+.theme-button {
+  position: absolute;
+  justify-content: center;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.theme-button button {
+  background-color: #3d466c;
+  color: rgb(232, 232, 232);
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.theme-button button:hover {
+  background-color: #3b415c;
+  transform: scale(1.02);
+}
+
 /* ----- Hero --- Manual Fold -----   */
 .hero-container {
   position: relative;
@@ -287,13 +310,6 @@ nav button {
   display: none;
 }
 
-/* ----- About Manual Fold -----  */
-.temp-div {
-  background-color: #050505;
-  display: flex;
-  justify-content: center;
-  padding: 0 0 50px 0;
-}
 
 /* Mini phone viewport */
 @media (min-width: 0px) and (max-width: 380px) {
