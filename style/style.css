@@ -22,7 +22,7 @@
 .dark-mode {
   --primary-color: #2b3246;
   --primary-color-hover: #3c445b;
-  --secondary-color: #B2B9C8;
+  --secondary-color: #324539;
   --complementary-color: #5e486a;
   --complementary-color-hover: #6b5178;
   --primary-font-color: white;
@@ -208,20 +208,23 @@ nav button {
   text-align: center;
   padding: 30px;
   border-radius: 10px;
+
 }
 
 .hero-description-text h2 {
   margin: 10px;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 5vw, 5rem);
 }
 
 .hero-description-text p {
   margin: 10px;
+  font-size: clamp(1rem, 3vw, 5rem);
 }
 
 .member-container p {
   font-size: .8rem;
   font-weight: bolder;
+  font-size: clamp(1rem, 3vw, 5rem);
 }
 
 .member-container button {
@@ -342,7 +345,7 @@ nav button {
 /* ----- Location --- Manual Fold -----  */
 .location {
   text-align: center;
-  color: var(--secondary-font-color);
+  color: var(--secondary-font-color-fixed);
   background-color: #050505;
   padding: 25px;
 }
@@ -375,6 +378,22 @@ nav button {
     padding: 0;
   }
 
+  .hero-description-text h2 {
+    margin: 10px;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+  }
+
+  .hero-description-text p {
+    margin: 10px;
+    font-size: clamp(.6rem, 3vw, 5rem);
+  }
+
+  .member-container p {
+    font-size: .8rem;
+    font-weight: bolder;
+    font-size: clamp(.6rem, 3vw, 4rem);
+  }
+
   /* ----- About --- Manual Fold -----  */
   .about-us {
     grid-template-columns: repeat(1, 1fr);
@@ -391,7 +410,7 @@ nav button {
 
   /* ----- Basics --- Manual Fold -----  */
   p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   /* ----- Nav --- Manual Fold -----  */
@@ -403,9 +422,16 @@ nav button {
     font-size: 1.6rem;
   }
 
-  /* ----- Hero --- Manual Fold -----  */
   .site-title {
     font-size: 2rem;
+  }
+
+  /* ----- Hero --- Manual Fold -----  */
+
+
+  .hero-description-text h2 {
+    font-size: clamp(2rem, 4vw, 5rem);
+    /* font-size: 2rem; */
   }
 
   .climb-container p {
@@ -464,7 +490,7 @@ nav button {
   }
 
   .site-title {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
 
   .nav-right {
@@ -512,8 +538,20 @@ nav button {
   }
 
   .hero-description-text h2 {
-    font-size: 2rem;
+    font-size: clamp(2.5rem, 3vw, 6rem);
+    /* font-size: 2rem; */
     margin: 0 0 40px 0;
+  }
+
+  .hero-description-text p {
+    margin: 10px;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+  }
+
+  .member-container p {
+    font-size: .8rem;
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 2vw, 5rem);
   }
 
   .member-container p {
