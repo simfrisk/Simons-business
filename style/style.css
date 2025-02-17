@@ -67,6 +67,8 @@ nav {
   height: 60px;
   /* Set a fixed height */
   top: 0;
+  transition: 0.2s ease-in-out,
+    color 0.2s ease-in-out;
   /* Ensures it stays at the top */
 }
 
@@ -126,7 +128,7 @@ nav button {
   height: 100dvh;
   width: 100vw;
   transform: translateY(-100%);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .nav-burger-menu.open {
