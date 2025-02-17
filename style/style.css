@@ -149,8 +149,8 @@ nav button {
 .theme-button {
   position: absolute;
   justify-content: center;
-  bottom: 20px;
-  width: 100%;
+  bottom: 50px;
+  width: 30%;
   display: flex;
 }
 
