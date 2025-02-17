@@ -5,9 +5,35 @@
     box-sizing: border-box;
   }
 
+  :root {
+    --primary-color: #E6DDCA;
+    --primary-color-hover: #f5ecd8;
+    --secondary-color: #D9D9D9;
+    --complementary-color: #C1B2C8;
+    --complementary-color-hover: #C1B2C8;
+    --primary-font-color: black;
+    --primary-font-color-hover: rgb(44, 44, 44);
+    --primary-font-color-fixed: black;
+    --secondary-font-color: white;
+    --secondary-font-color-fixed: white;
+    --dark-color: rgb(164, 164, 164);
+  }
+
+  .dark-mode {
+    --primary-color: #2b3246;
+    --primary-color-hover: #3c445b;
+    --secondary-color: #324539;
+    --complementary-color: #5e486a;
+    --complementary-color-hover: #6b5178;
+    --primary-font-color: white;
+    --primary-font-color-hover: rgb(202, 202, 202);
+    --secondary-font-color: black;
+    --dark-color: rgb(40, 40, 40);
+  }
+
   body {
     margin: 0;
-    background-color: #D9D9D9;
+    background-color: var(--secondary-color);
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -17,6 +43,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px 20px;
+    color: var(--primary-font-color);
   }
 
   /* ----- Nav Bar --- Manual Fold -----  */
@@ -27,7 +54,7 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: #E6DDCA;
+    background-color: var(--primary-color);
     height: 60px;
     /* Set a fixed height */
     top: 0;
@@ -35,12 +62,12 @@
   }
 
   .site-title {
-    color: black;
     font-size: 1.6rem;
     margin: 20px;
     font-weight: bolder;
     text-decoration: none;
     transition: ease .3s;
+    color: var(--primary-font-color);
   }
 
   .site-title:hover {
@@ -180,7 +207,7 @@
     font-size: 1rem;
     height: 40px;
     border: none;
-    background-color: #C1B2C8;
+    background-color: var(--complementary-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.);
     transition: ease .3s;
   }
@@ -210,7 +237,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: white;
+    background-color: var(--secondary-font-color);
     padding: 30px 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -231,7 +258,7 @@
     transition: ease .3s;
     appearance: none;
     padding: 6px 10px;
-    background-color: #ffffff;
+    background-color: var(--secondary-font-color);
     border-radius: 10px;
   }
 
@@ -280,7 +307,7 @@
   input {
     display: flex;
     font-size: 1.2rem;
-    color: #232323;
+    color: var(--primary-font-color);
     padding: 3px 5px;
     text-align: lef;
     margin: 0 0 0 3px;
@@ -311,12 +338,12 @@
     transition: ease .3s;
     appearance: none;
     padding: 15px 25px;
-    background-color: #C1B2C8;
+    background-color: var(--complementary-color);
   }
 
   .add-to-cart-btn:hover {
-    transform: scale(1.2);
-    background-color: rgb(237, 237, 237);
+    transform: scale(1..08);
+    background-color: var(--complementary-color-hover);
   }
 
 
@@ -437,12 +464,12 @@
     }
 
     .nav-links:hover {
-      color: rgb(92, 92, 92);
+      color: var(--secondary-color-hover);
       transform: scale(105%);
     }
 
     .nav-login {
-      background-color: #f8f5ef;
+      background-color: var(--complementary-color);
       height: 50px;
       padding: 10px 20px;
       border-radius: 5px;
