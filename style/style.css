@@ -356,8 +356,9 @@ nav button {
   display: none;
 }
 
+
 /* Mini phone viewport */
-@media (min-width: 0px) and (max-width: 380px) {
+@media (min-width: 0px) and (max-width: 400px) {
 
   /* ----- Basics --- Manual Fold -----  */
   .site-title {
@@ -429,8 +430,6 @@ nav button {
   }
 
   /* ----- Hero --- Manual Fold -----  */
-
-
   .hero-description-text h2 {
     font-size: clamp(2rem, 4vw, 5rem);
     /* font-size: 2rem; */
