@@ -24,3 +24,16 @@ burgerBtn.onclick = function () {
   burgerLine01.classList.toggle("line-01");
   burgerLine03.classList.toggle("line-03");
 };
+
+
+const darkModeToggle = document.getElementById("dark-mode");
+const body = document.getElementById("body");
+const lightIcon = document.getElementById("light");
+const darkIcon = document.getElementById("dark");
+
+darkModeToggle.onclick = function () {
+  body.classList.toggle("dark-mode");
+  lightIcon.style.display = lightIcon.style.display === "block" ? "none" : "block";
+  darkIcon.style.display = darkIcon.style.display === "none" ? "block" : "none";
+
+};

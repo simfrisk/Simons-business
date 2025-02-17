@@ -5,9 +5,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #E6DDCA;
+  --primary-color-hover: #f5ecd8;
+  --secondary-color: #B2B9C8;
+  --complementary-color: #C1B2C8;
+  --primary-font-color: black;
+  --primary-font-color-fixed: black;
+  --secondary-font-color: white;
+  --secondary-font-color-fixed: white;
+  --dark-color: rgb(164, 164, 164);
+}
+
+.dark-mode {
+  --primary-color: #2b3246;
+  --primary-color-hover: #3c445b;
+  --secondary-color: #B2B9C8;
+  --complementary-color: #C1B2C8;
+  --primary-font-color: white;
+  --secondary-font-color: black;
+  --dark-color: rgb(40, 40, 40);
+}
+
 body {
   margin: 0;
-  background-color: #E6DDCA;
+  background-color: var(--primary-color);
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 60px;
   /* Adjust to match the nav height */
@@ -32,7 +54,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: #E6DDCA;
+  background-color: var(--primary-color);
   height: 60px;
   /* Set a fixed height */
   top: 0;
@@ -40,7 +62,7 @@ nav {
 }
 
 .site-title {
-  color: black;
+  color: var(--primary-font-color);
   font-size: 1.6rem;
   margin: 20px;
   font-weight: bolder;
@@ -59,10 +81,11 @@ nav {
 
 nav button {
   border: none;
-  background-color: #E6DDCA;
+  color: var(--primary-font-color);
+  background-color: var(--primary-color);
   font-size: 1.8rem;
   margin: 0 30px;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .hamburger {
@@ -72,7 +95,7 @@ nav button {
 .burger-icon-line {
   height: 3px;
   width: 25px;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--primary-font-color);
   margin: 5px;
   transition: transform 0.2s ease-in-out;
 }
@@ -108,15 +131,16 @@ nav button {
   display: flex;
   justify-content: space-between;
   /* border-bottom: solid black 1px; */
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .nav-burger-row:hover,
 .nav-burger-row:hover button {
-  background-color: #f5ecd8;
+  background-color: var(--primary-color-hover);
 }
 
 .nav-burger-arrow {
+  color: var(--primary-font-color);
   font-size: 1.5rem;
   margin: 25px 50px;
 }
@@ -130,19 +154,31 @@ nav button {
   display: flex;
 }
 
-.theme-button button {
-  background-color: #3d466c;
-  color: rgb(232, 232, 232);
-  font-size: 1.3rem;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
 .theme-button button:hover {
   background-color: #3b415c;
   transform: scale(1.02);
 }
+
+.theme-button img {
+  height: 55px;
+  width: 55px;
+  padding: 12px;
+  background-color: var(--dark-color);
+  border-radius: 50px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark {
+  display: block;
+
+}
+
+.light {
+  display: none;
+}
+
+
 
 /* ----- Hero --- Manual Fold -----   */
 .hero-container {
@@ -155,7 +191,7 @@ nav button {
 }
 
 .hero-text {
-  color: white;
+  color: var(--secondary-font-color-fixed);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -183,8 +219,8 @@ nav button {
 .member-container button {
   font-size: 1rem;
   padding: 4px 12px;
-  background-color: #C1B2C8;
-  color: rgb(0, 0, 0);
+  background-color: var(--complementary-color);
+  color: var(--primary-font-color);
   border: none;
   border-radius: 5px;
   transition: ease .5s;
@@ -192,7 +228,7 @@ nav button {
 
 /* ----- About --- Manual Fold -----  */
 .member-container button:hover {
-  background-color: #dccce4;
+  background-color: var(--complementary-color);
   transform: scale(102%);
 }
 
@@ -262,23 +298,22 @@ nav button {
 }
 
 .about-text p {
-  color: white;
+  color: var(--secondary-font-color);
   width: 80%;
 }
 
 .about-text h3 {
   display: none;
-  color: white;
+  color: var(--secondary-font-color);
   width: 80%;
   line-height: 40px;
   margin: 20px 0 10px 0;
 }
 
 /* ----- Prices --- Manual Fold -----  */
-
 .prices {
   text-align: center;
-  background-color: #C1B2C8;
+  background-color: var(--complementary-color);
   margin: 70px 0px 0px 0px;
   padding: 25px;
   padding-bottom: 50px;
@@ -293,7 +328,7 @@ nav button {
 /* ----- Contact --- Manual Fold -----  */
 .contact {
   text-align: center;
-  background-color: #B2B9C8;
+  background-color: var(--secondary-color);
   margin: 42px 0px 0px 0px;
   padding: 25px;
 }
@@ -301,7 +336,7 @@ nav button {
 /* ----- Location --- Manual Fold -----  */
 .location {
   text-align: center;
-  color: white;
+  color: var(--secondary-font-color);
   background-color: #050505;
   padding: 25px;
 }
@@ -309,7 +344,6 @@ nav button {
 .map {
   display: none;
 }
-
 
 /* Mini phone viewport */
 @media (min-width: 0px) and (max-width: 380px) {
