@@ -24,7 +24,7 @@ h3 {
   margin: 0px 0px 0px 0px;
 }
 
-/* ----- Nav --- Manual Fold -----  */
+/* ----- Nav Bar --- Manual Fold -----  */
 nav {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,6 @@ nav {
   top: 0;
   /* Ensures it stays at the top */
 }
-
 
 .site-title {
   color: black;
@@ -58,6 +57,39 @@ nav {
   display: none;
 }
 
+nav button {
+  border: none;
+  background-color: #E6DDCA;
+  font-size: 1.8rem;
+  margin: 0 30px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.hamburger {
+  margin: 20px;
+}
+
+.burger-icon-line {
+  height: 3px;
+  width: 25px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.line-01 {
+  transform: translateY(8px);
+}
+
+.line-03 {
+  transform: translateY(-8px);
+}
+
+
+
+
+
+/* ----- Nav expand --- Manual Fold -----  */
 .nav-burger-menu {
   display: flex;
   flex-direction: column;
@@ -86,21 +118,11 @@ nav {
 .nav-burger-row:hover,
 .nav-burger-row:hover button {
   background-color: #f5ecd8;
-
 }
 
 .nav-burger-arrow {
   font-size: 1.5rem;
   margin: 25px 50px;
-}
-
-
-nav button {
-  border: none;
-  background-color: #E6DDCA;
-  font-size: 1.8rem;
-  margin: 0 30px;
-  transition: background-color 0.1s ease-in-out;
 }
 
 /* ----- Hero --- Manual Fold -----   */

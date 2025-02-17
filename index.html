@@ -10,7 +10,7 @@
 
 <body>
 
-  <!----- Phone Nav --- Manual Fold  ----->
+  <!----- Nav expand --- Manual Fold  ----->
   <nav id="burger-menu" class="nav-burger-menu">
     <div class="nav-burger-row">
       <button class="nav-links-phone">Events</button>
@@ -26,14 +26,22 @@
     </div>
   </nav>
 
-  <!----- Desktop Nav --- Manual Fold  ----->
+  <!----- Nav bar --- Manual Fold  ----->
   <nav>
     <a href="index.html" class="site-title">Boulder Zone</a>
     <div class="nav-right">
       <button class="nav-links">Events</button>
       <button class="nav-links" id="shopBtn">Shop</button>
       <button class="nav-links nav-login">LOG IN</button>
-      <button id="burger-button" class="hamburger">&#9776;</button> <!-- This is only for phone view -->
+      <div class="hamburger" id="burger-button">
+        <!-- Burger icon -->
+        <div class="burger-icon-line" id="burger-line-01"></div>
+        <div class="burger-icon-line line-02"></div>
+        <div class="burger-icon-line" id="burger-line-03"></div>
+      </div>
+      <!-- <button id=" burger-button" class="hamburger">&#9776;</button> -->
+
+      <!-- This is only for phone view -->
     </div>
   </nav>
 
