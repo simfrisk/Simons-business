@@ -65,3 +65,21 @@ item09Btn.onclick = function () {
 exitBtn.onclick = function () {
   popUpProduct.style.display = "none";
 };
+
+
+const shopBtn = document.getElementById("shopBtn");
+const burgerBtn = document.getElementById("burger-button");
+const burgerMenu = document.getElementById("burger-menu");
+const burgerLine01 = document.getElementById("burger-line-01");
+const burgerLine03 = document.getElementById("burger-line-03");
+
+shopBtn.onclick = function () {
+  window.location.href = "html/shop.html";
+};
+
+burgerBtn.onclick = function () {
+  burgerMenu.classList.toggle("open");
+  burgerBtn.style.color = burgerBtn.style.color === "gray" ? "black" : "gray";
+  burgerLine01.classList.toggle("line-01");
+  burgerLine03.classList.toggle("line-03");
+};

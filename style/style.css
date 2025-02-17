@@ -41,8 +41,8 @@ nav {
 
 .site-title {
   color: black;
-  font-size: 1.2rem;
-  margin: 20px 30px;
+  font-size: 1.6rem;
+  margin: 20px;
   font-weight: bolder;
   text-decoration: none;
   transition: ease .3s;
@@ -84,10 +84,6 @@ nav button {
 .line-03 {
   transform: translateY(-8px);
 }
-
-
-
-
 
 /* ----- Nav expand --- Manual Fold -----  */
 .nav-burger-menu {
@@ -299,25 +295,12 @@ nav button {
   padding: 0 0 50px 0;
 }
 
-/* ----- Temp --- Manual Fold -----  */
-.temp-link {
-  text-decoration: none;
-  color: white;
-  background-color: #050505;
-  font-size: 1rem;
-}
-
-.temp-link:hover {
-  transform: scale(1.1);
-}
-
-
 /* Mini phone viewport */
-@media (min-width: 0px) and (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 340px) {
 
   /* ----- Basics --- Manual Fold -----  */
   .site-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   p {
@@ -325,7 +308,6 @@ nav button {
   }
 
   h3 {
-    font-size: 22;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -346,7 +328,6 @@ nav button {
     font-size: 1.2rem;
   }
 
-
 }
 
 /* iPad viewport */
@@ -358,6 +339,10 @@ nav button {
   }
 
   /* ----- Nav --- Manual Fold -----  */
+  nav {
+    height: 80px;
+  }
+
   nav h3 {
     font-size: 1.6rem;
   }
@@ -413,41 +398,17 @@ nav button {
     object-fit: cover;
   }
 
-  /* ----- Hero --- Manual Fold -----  */
-  .site-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-img {
-    max-height: 600px;
-    object-fit: cover;
-  }
-
-  .climb-container h2 {
-    margin: 0 0 20px 0;
-  }
-
-  .member-container p {
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-
-  .member-container button {
-    font-size: 2rem;
-    padding: 10px 22px;
-    background-color: #C1B2C8;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
-    transition: ease .5s;
-  }
-
   /* ----- Nav --- Manual Fold -----  */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    height: 80px;
+  }
+
+  .site-title {
+    font-size: 2.2rem;
   }
 
   .nav-right {
@@ -482,6 +443,32 @@ nav button {
 
   .hamburger {
     display: none;
+  }
+
+  /* ----- Hero --- Manual Fold -----  */
+  .hero-img {
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .hero-description-text h2 {
+    font-size: 2rem;
+    margin: 0 0 40px 0;
+  }
+
+  .member-container p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .member-container button {
+    font-size: 2rem;
+    padding: 10px 22px;
+    background-color: #C1B2C8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    transition: ease .5s;
   }
 
   /* ----- About --- Manual Fold -----  */
@@ -598,7 +585,5 @@ nav button {
     display: block;
     margin: 50px;
   }
-
-
 
 }

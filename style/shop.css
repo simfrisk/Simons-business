@@ -19,18 +19,25 @@
     margin: 10px 20px;
   }
 
-  /* ----- Nav Desktop --- Manual Fold -----  */
+  /* ----- Nav Bar --- Manual Fold -----  */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     background-color: #E6DDCA;
+    height: 60px;
+    /* Set a fixed height */
+    top: 0;
+    /* Ensures it stays at the top */
   }
 
   .site-title {
     color: black;
-    font-size: 1.2rem;
-    margin: 20px 30px;
+    font-size: 1.6rem;
+    margin: 20px;
     font-weight: bolder;
     text-decoration: none;
     transition: ease .3s;
@@ -48,8 +55,65 @@
   nav button {
     border: none;
     background-color: #E6DDCA;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0 30px;
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .hamburger {
+    margin: 20px;
+  }
+
+  .burger-icon-line {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .line-01 {
+    transform: translateY(8px);
+  }
+
+  .line-03 {
+    transform: translateY(-8px);
+  }
+
+  /* ----- Nav expand --- Manual Fold -----  */
+  .nav-burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-burger-menu.open {
+    transform: translateY(0%);
+  }
+
+  .nav-burger-row {
+    /* border: solid red 2px; */
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: solid black 1px; */
+    transition: background-color 0.1s ease-in-out;
+  }
+
+  .nav-burger-row:hover,
+  .nav-burger-row:hover button {
+    background-color: #f5ecd8;
+  }
+
+  .nav-burger-arrow {
+    font-size: 1.5rem;
+    margin: 25px 50px;
   }
 
   /* ----- Hero --- Manual Fold -----  */
@@ -57,6 +121,8 @@
     text-align: center;
     font-size: 3rem;
     margin-top: 40px;
+    padding-top: 80px;
+
   }
 
   /* ----- Items --- Manual Fold -----  */
@@ -158,7 +224,6 @@
     display: flex;
     justify-content: right;
   }
-
 
   .exit-btn {
     font-size: 1.3rem;
@@ -282,50 +347,13 @@
       margin: 100px 3%;
     }
 
-    /* ----- Nav Desktop --- Manual Fold -----  */
+    /* ----- Nav --- Manual Fold -----  */
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 30px;
+      height: 80px;
     }
 
-    .site-title {
-      font-size: 2.2rem;
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 80px;
-    }
-
-    .nav-links {
-      display: block;
+    nav h3 {
       font-size: 1.6rem;
-      margin: 0;
-      transition: ease .3s;
-    }
-
-    .nav-links:hover {
-      color: rgb(92, 92, 92);
-      transform: scale(105%);
-    }
-
-    .nav-login {
-      background-color: #f8f5ef;
-      height: 50px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hamburger {
-      display: none;
     }
 
     /* ----- Hero --- Manual Fold -----  */
@@ -333,7 +361,7 @@
       margin-top: 80px;
     }
 
-    /* ----- Nav Desktop --- Manual Fold -----  */
+    /* ----- Items Desktop --- Manual Fold -----  */
     .items {
       width: 300px;
       margin: auto;
@@ -388,6 +416,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 30px;
+      height: 80px;
     }
 
     .site-title {

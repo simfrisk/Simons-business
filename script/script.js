@@ -6,10 +6,8 @@ const burgerMenu = document.getElementById("burger-menu");
 const burgerLine01 = document.getElementById("burger-line-01");
 const burgerLine03 = document.getElementById("burger-line-03");
 
-
 joinBtn.onclick = function () {
   window.location.href = "html/newMember.html";
-
 };
 
 shopBtn.onclick = function () {
