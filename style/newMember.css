@@ -165,7 +165,6 @@ nav button {
   margin: 25px 50px;
 }
 
-
 .theme-button {
   position: absolute;
   justify-content: center;
@@ -333,6 +332,7 @@ input {
   /* ----- Side image --- Manual Fold ----- */
   .side-img {
     display: block;
+    height: 100dvh;
   }
 
   /* ----- form --- Manual Fold ----- */
