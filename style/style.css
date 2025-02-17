@@ -296,7 +296,7 @@ nav button {
 }
 
 /* Mini phone viewport */
-@media (min-width: 0px) and (max-width: 340px) {
+@media (min-width: 0px) and (max-width: 380px) {
 
   /* ----- Basics --- Manual Fold -----  */
   .site-title {
