@@ -5,10 +5,38 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #E6DDCA;
+  --primary-color-hover: #f5ecd8;
+  --secondary-color: #D9D9D9;
+  --complementary-color: #C1B2C8;
+  --complementary-color-hover: #C1B2C8;
+  --primary-font-color: black;
+  --primary-font-color-hover: rgb(44, 44, 44);
+  --primary-font-color-fixed: black;
+  --secondary-font-color: white;
+  --secondary-font-color-fixed: white;
+  --dark-color: rgb(164, 164, 164);
+}
+
+.dark-mode {
+  --primary-color: #2b3246;
+  --primary-color-hover: #3c445b;
+  --secondary-color: #324539;
+  --complementary-color: #5e486a;
+  --complementary-color-hover: #6b5178;
+  --primary-font-color: white;
+  --primary-font-color-hover: rgb(202, 202, 202);
+  --secondary-font-color: black;
+  --dark-color: rgb(40, 40, 40);
+}
+
 body {
+  background-color: var(--secondary-color);
   margin: 0;
-  background-color: #D9D9D9;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+  color: var(--primary-font-color);
 }
 
 button {
@@ -16,8 +44,15 @@ button {
   width: 100%;
   border: none;
   border-radius: 5px;
-  background-color: #C1B2C8;
+  background-color: var(--complementary-color);
+  color: var(--primary-font-color);
   padding: 12px;
+  transition: transform ease 0.3s, background-color ease 0.3s;
+}
+
+button:hover {
+  background-color: var(--complementary-color-hover);
+  transform: scale(1.05);
 }
 
 p {
@@ -25,18 +60,31 @@ p {
   margin: 40px 0 0 0;
 }
 
-/* ----- Nav bar --- Manual Fold ----- */
+a {
+  color: var(--primary-font-color-fixed);
+}
+
+/* ----- Nav Bar --- Manual Fold -----  */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #E6DDCA;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--primary-color);
+  height: 60px;
+  /* Set a fixed height */
+  top: 0;
+  transition: 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  /* Ensures it stays at the top */
 }
 
 .site-title {
-  color: black;
-  font-size: 1.2rem;
-  margin: 20px 30px;
+  color: var(--primary-font-color);
+  font-size: 1.6rem;
+  margin: 20px;
   font-weight: bolder;
   text-decoration: none;
   transition: ease .3s;
@@ -44,7 +92,7 @@ nav {
 
 .site-title:hover {
   transform: scale(102%);
-  color: rgb(59, 61, 76);
+  color: var(--primary-font-color-hover);
 }
 
 .nav-links {
@@ -53,10 +101,103 @@ nav {
 
 nav button {
   border: none;
-  background-color: #E6DDCA;
-  font-size: 2rem;
+  color: var(--primary-font-color);
+  background-color: var(--primary-color);
+  font-size: 1.8rem;
   margin: 0 30px;
+  transition: background-color 0.2s ease-in-out;
 }
+
+.hamburger {
+  margin: 20px;
+}
+
+.burger-icon-line {
+  height: 3px;
+  width: 25px;
+  background-color: var(--primary-font-color);
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.line-01 {
+  transform: translateY(8px);
+}
+
+.line-03 {
+  transform: translateY(-8px);
+}
+
+/* ----- Nav expand --- Manual Fold -----  */
+.nav-burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100dvh;
+  width: 100vw;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-burger-menu.open {
+  transform: translateY(0%);
+}
+
+.nav-burger-row {
+  /* border: solid red 2px; */
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: solid black 1px; */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-burger-row:hover,
+.nav-burger-row:hover button {
+  background-color: var(--primary-color-hover);
+}
+
+.nav-burger-arrow {
+  color: var(--primary-font-color);
+  font-size: 1.5rem;
+  margin: 25px 50px;
+}
+
+
+.theme-button {
+  position: absolute;
+  justify-content: center;
+  bottom: 50px;
+  width: 30%;
+  display: flex;
+}
+
+.theme-button button:hover {
+  background-color: #3b415c;
+  transform: scale(1.02);
+}
+
+.theme-button img {
+  height: 55px;
+  width: 55px;
+  padding: 12px;
+  background-color: var(--dark-color);
+  border-radius: 50px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark {
+  display: block;
+
+}
+
+.light {
+  display: none;
+}
+
 
 /* ----- Side image --- Manual Fold ----- */
 .side-img {
