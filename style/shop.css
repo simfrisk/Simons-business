@@ -58,21 +58,23 @@
     height: 60px;
     /* Set a fixed height */
     top: 0;
+    transition: 0.2s ease-in-out,
+      color 0.2s ease-in-out;
     /* Ensures it stays at the top */
   }
 
   .site-title {
+    color: var(--primary-font-color);
     font-size: 1.6rem;
     margin: 20px;
     font-weight: bolder;
     text-decoration: none;
     transition: ease .3s;
-    color: var(--primary-font-color);
   }
 
   .site-title:hover {
     transform: scale(102%);
-    color: rgb(59, 61, 76);
+    color: var(--primary-font-color-hover);
   }
 
   .nav-links {
@@ -81,10 +83,11 @@
 
   nav button {
     border: none;
-    background-color: #E6DDCA;
+    color: var(--primary-font-color);
+    background-color: var(--primary-color);
     font-size: 1.8rem;
     margin: 0 30px;
-    transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .hamburger {
@@ -94,7 +97,7 @@
   .burger-icon-line {
     height: 3px;
     width: 25px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--primary-font-color);
     margin: 5px;
     transition: transform 0.2s ease-in-out;
   }
@@ -113,10 +116,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     transform: translateY(-100%);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 
   .nav-burger-menu.open {
@@ -130,21 +133,56 @@
     display: flex;
     justify-content: space-between;
     /* border-bottom: solid black 1px; */
-    transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .nav-burger-row:hover,
   .nav-burger-row:hover button {
-    background-color: #f5ecd8;
+    background-color: var(--primary-color-hover);
   }
 
   .nav-burger-arrow {
+    color: var(--primary-font-color);
     font-size: 1.5rem;
     margin: 25px 50px;
   }
 
+
+  .theme-button {
+    position: absolute;
+    justify-content: center;
+    bottom: 50px;
+    width: 30%;
+    display: flex;
+  }
+
+  .theme-button button:hover {
+    background-color: #3b415c;
+    transform: scale(1.02);
+  }
+
+  .theme-button img {
+    height: 55px;
+    width: 55px;
+    padding: 12px;
+    background-color: var(--dark-color);
+    border-radius: 50px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .dark {
+    display: block;
+
+  }
+
+  .light {
+    display: none;
+  }
+
   /* ----- Hero --- Manual Fold -----  */
   .page-title {
+    color: var(--primary-font-color);
     text-align: center;
     font-size: 3rem;
     margin-top: 40px;
@@ -232,6 +270,7 @@
 
   /* ----- Pop up item --- Manual Fold -----  */
   .pop-up-product {
+    color: var(--primary-font-color);
     position: fixed;
     top: 70%;
     left: 50%;
@@ -258,7 +297,7 @@
     transition: ease .3s;
     appearance: none;
     padding: 6px 10px;
-    background-color: var(--secondary-font-color);
+    background-color: white;
     border-radius: 10px;
   }
 
@@ -283,6 +322,7 @@
   }
 
   form {
+    color: var(--primary-font-color);
     /* border: solid rgb(255, 0, 102) 2px; */
   }
 
@@ -307,13 +347,13 @@
   input {
     display: flex;
     font-size: 1.2rem;
-    color: var(--primary-font-color);
     padding: 3px 5px;
     text-align: lef;
     margin: 0 0 0 3px;
     width: 100px;
     /* border: solid rgb(255, 0, 0) 2px; */
   }
+
 
   .span-container {
     width: 100%;
@@ -332,12 +372,14 @@
 
 
   .add-to-cart-btn {
+    margin-top: 10px;
     font-size: 1.3rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: ease .3s;
     appearance: none;
     padding: 15px 25px;
+    color: var(--primary-font-color);
     background-color: var(--complementary-color);
   }
 
@@ -541,8 +583,3 @@
     }
 
   }
-
-  /*
-inpo
-https://www.klattermusen.com/sv-se/men/shop-all-jackets/
- */
