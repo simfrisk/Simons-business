@@ -241,6 +241,7 @@
   }
 
   .item-btn {
+    color: var(--primary-font-color);
     border-radius: 20px;
     font-size: 1rem;
     height: 40px;
