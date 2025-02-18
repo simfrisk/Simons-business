@@ -421,11 +421,57 @@ nav button {
   }
 
   nav h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .site-title {
     font-size: 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(30px, 55px, 100px);
+  }
+
+  .nav-links {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0;
+    transition: ease .3s;
+  }
+
+  .nav-links:hover {
+    color: var(--primary-font-color-hover);
+    transform: scale(105%);
+  }
+
+  .nav-login {
+    background-color: var(--complementary-color);
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-login:hover {
+    background-color: var(--complementary-color-hover);
+  }
+
+  .hamburger {
+    display: none;
   }
 
   /* ----- Hero --- Manual Fold -----  */
