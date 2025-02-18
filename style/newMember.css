@@ -39,7 +39,7 @@ body {
   color: var(--primary-font-color);
 }
 
-button {
+.submit-button {
   font-size: 1.5rem;
   width: 100%;
   border: none;
@@ -74,11 +74,9 @@ nav {
   z-index: 2;
   background-color: var(--primary-color);
   height: 60px;
-  /* Set a fixed height */
   top: 0;
   transition: 0.2s ease-in-out,
     color 0.2s ease-in-out;
-  /* Ensures it stays at the top */
 }
 
 .site-title {
@@ -145,12 +143,10 @@ nav button {
 }
 
 .nav-burger-row {
-  /* border: solid red 2px; */
   margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: solid black 1px; */
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -165,11 +161,12 @@ nav button {
   margin: 25px 50px;
 }
 
+
 .theme-button {
   position: absolute;
   justify-content: center;
-  bottom: 50px;
-  width: 30%;
+  bottom: 35px;
+  width: 100%;
   display: flex;
 }
 

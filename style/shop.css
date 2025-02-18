@@ -151,8 +151,8 @@
   .theme-button {
     position: absolute;
     justify-content: center;
-    bottom: 50px;
-    width: 30%;
+    bottom: 35px;
+    width: 100%;
     display: flex;
   }
 
