@@ -244,14 +244,14 @@ nav button {
 }
 
 /* ----- About --- Manual Fold -----  */
-.skinny {
+.pre-about-subtitle {
   font-weight: 300;
   margin: 0px 0px 30px 0px;
   font-size: 1rem;
   grid-column: span 2;
 }
 
-.bold {
+.pre-about-title {
   margin: 15px 0px 0px 0px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -499,12 +499,12 @@ nav button {
     margin: 60px 0px;
   }
 
-  .bold {
+  .pre-about-title {
     font-size: 1.8rem;
     margin: 0 0 400px 0;
   }
 
-  .skinny {
+  .pre-about-subtitle {
     font-size: 1.4rem;
   }
 }
@@ -634,12 +634,12 @@ nav button {
     margin: 70px 0px;
   }
 
-  .bold {
+  .pre-about-title {
     font-size: 2rem;
     margin: 0 0 400px 0;
   }
 
-  .skinny {
+  .pre-about-subtitle {
     font-size: 1.6rem;
   }
 
