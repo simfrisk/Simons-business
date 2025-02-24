@@ -1,4 +1,4 @@
-
+// varibles
 const item01Btn = document.getElementById("item01Btn");
 const item02Btn = document.getElementById("item02Btn");
 const item03Btn = document.getElementById("item03Btn");
@@ -9,17 +9,14 @@ const item07Btn = document.getElementById("item07Btn");
 const item08Btn = document.getElementById("item08Btn");
 const item09Btn = document.getElementById("item09Btn");
 const exitBtn = document.getElementById("exitBtn");
-
 const popUpProduct = document.getElementById("popUpProduct");
-
 const popUpTitle = document.getElementById("popUpTitle");
 
 
-
+// Item name change and popup function
 item01Btn.onclick = function () {
   popUpProduct.style.display = "block";
   popUpTitle.textContent = "Fulu Climbing";
-
 };
 
 item02Btn.onclick = function () {
@@ -66,15 +63,19 @@ exitBtn.onclick = function () {
   popUpProduct.style.display = "none";
 };
 
+
 const shopBtn = document.getElementById("shopBtn");
+
+
+// Shop button link
+shopBtn.onclick = function () {
+  window.location.reload();
+};
+
 const burgerBtn = document.getElementById("burger-button");
 const burgerMenu = document.getElementById("burger-menu");
 const burgerLine01 = document.getElementById("burger-line-01");
 const burgerLine03 = document.getElementById("burger-line-03");
-
-shopBtn.onclick = function () {
-  window.location.href = "html/shop.html";
-};
 
 burgerBtn.onclick = function () {
   burgerMenu.classList.toggle("open");
@@ -84,8 +85,8 @@ burgerBtn.onclick = function () {
 };
 
 
-// Darkmode toggle
 
+// Darkmode toggle
 const darkModeToggle = document.getElementById("dark-mode");
 const body = document.getElementById("body");
 const lightIcon = document.getElementById("light");
@@ -95,5 +96,4 @@ darkModeToggle.onclick = function () {
   body.classList.toggle("dark-mode");
   lightIcon.style.display = lightIcon.style.display === "block" ? "none" : "block";
   darkIcon.style.display = darkIcon.style.display === "none" ? "block" : "none";
-
 };

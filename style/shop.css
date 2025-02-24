@@ -187,7 +187,6 @@
     font-size: 3rem;
     margin-top: 40px;
     padding-top: 80px;
-
   }
 
   /* ----- Items --- Manual Fold -----  */
@@ -397,6 +396,7 @@
   }
 
 
+  /* Sort of small phone */
   @media (max-width: 400px) {
 
     /* ----- Pop up item --- Manual Fold -----  */
@@ -545,7 +545,6 @@
     }
 
   }
-
 
   /* Desktop viewport */
   @media (min-width: 1024px) {

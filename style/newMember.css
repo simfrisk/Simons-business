@@ -37,6 +37,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 60px;
   color: var(--primary-font-color);
+  pad
 }
 
 .submit-button {
@@ -57,7 +58,7 @@ button:hover {
 
 p {
   text-align: center;
-  margin: 40px 0 0 0;
+  margin: 40px 10px 20px 10px;
 }
 
 a {
@@ -193,7 +194,6 @@ nav button {
 .light {
   display: none;
 }
-
 
 /* ----- Side image --- Manual Fold ----- */
 .side-img {
